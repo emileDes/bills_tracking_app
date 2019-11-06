@@ -1,11 +1,17 @@
-<h1>Sign Up Form</h1>
+<h1>Sign Up</h1>
 
-<form action="/user_created" method="post">
-  <label for="">Name</label>
-  <input type="text" name="name">
-  <label for="">Email</label>
-  <input type="text" name="email">
-  <label for="">Password</label>
-  <input type="password" name="password">
-  <button>Submit</button>
+<form class="sign-up-form-container" action="/user_created" method="post">
+  <div class="sign-up-form-children">
+    <label class="sign-up-form-label" for="">Name</label>
+    <input class="sign-up-form-input" type="text" name="name">
+  </div>
+  <div class="sign-up-form-children">
+    <label class="sign-up-form-label" for="">Email</label>
+    <input class="sign-up-form-input" type="text" name="email">
+  </div>
+  <div class="sign-up-form-children">
+    <label class="sign-up-form-label" for="">Password</label>
+    <input class="sign-up-form-input" type="password" name="password">
+  </div>
+  <button class="sign-up-form-button">Submit</button>
 </form>

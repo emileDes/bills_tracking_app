@@ -5,7 +5,7 @@ end
 
 post '/user_created' do
   create_user(params[:name], params[:email], params[:password])
-  redirect '/users'
+  redirect '/login'
 end
 
 get '/users' do

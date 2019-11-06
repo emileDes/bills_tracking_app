@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <title>Hello World</title>
   <link rel='stylesheet' href='/stylesheets/main.css'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed|Staatliches&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<% if session[:user_id] != nil %>
-  <form action="/logout">
-    <button>Logout</button>
-  </form>
-<% end %>
+<header>
+  <% if session[:user_id] != nil %>
+      <form action="/logout">
+        <button class="logout-btn">Logout</button>
+      </form>
+  <% end %>
+</header>
 
-  <%= yield %>
+
+<%= yield %>
 
 </body>
 </html>
