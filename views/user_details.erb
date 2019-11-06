@@ -1,0 +1,12 @@
+<h1>User Details</h1>
+
+<h3><%= @user["name"] %></h3>
+<p> <%= @user["email"] %></p>
+
+<form action="/update_user">
+  <button>Update Details</button>
+</form>
+
+<form action="/delete_user">
+  <button>Delete User</button>
+</form>

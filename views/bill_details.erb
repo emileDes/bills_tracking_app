@@ -1,0 +1,18 @@
+<a href="/bills_tracker">Bills Tracker</a>
+<h1>Bill Details</h1>
+
+<%= @single_bill["date"] %>
+<%= @single_bill["description"] %>
+<%= @single_bill["amount"] %>
+<%= @single_bill["category"] %>
+<%= @single_bill["paid"] %>
+
+<form action="/update_bill">
+<input type="hidden" name="id" value="<%= @single_bill["id"] %>">
+  <button>Update</button>
+</form>
+
+<form action="/delete_bill?id=<%= @single_bill["id"] %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button>Delete</button>
+</form>
