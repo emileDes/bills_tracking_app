@@ -33,7 +33,7 @@ post '/login' do
   else
     session[:login_failed] = true
     erb :login_page
-  end'
+  end
 end
 
 get '/logout' do
