@@ -8,16 +8,19 @@
 
 
 
-## Features/Possible Features:
-- Sort options
+## Features
 - Add bills
 - View list of bills
+- Bills total
+- Add bill categories
+
+## Features I Intend to Add
+- Sort options
 - Graphing
 - Monthly/Quarterly breakdown
 - Comparisons with previous months/years
 - Forecasting
 - Splitting with housemates (Other users)
-- Add bill categories
 
 
 =========================================================================
