@@ -1,3 +1,4 @@
+/* ALL PAGES */
 header {
   display: flex;
   justify-content: flex-end;
@@ -5,18 +6,11 @@ header {
   height: 50px;
   background-color: rgba(128, 52, 74, 0.5);
 }
-
 .logout-btn {
   width: 100px;
   height: 50px;
   font-size: 25px;
 }
-
-h1 {
-  font-family: "Roboto Condensed";
-  font-size: 75px;
-}
-
 body {
   margin: 0;
   min-height: 100vh;
@@ -25,46 +19,49 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
+h1 {
+  font-family: "Roboto Condensed";
+  font-size: 70px;
+}
 
+
+/* Welcome Page */
 .login-signup-btn-container {
   display: flex;
   justify-content: center;
 }
-
 .login-signup-btns {
   margin: 50px;
-  padding: 1% 4%;
-  width: 200px;
+  padding: 3% 4%;
+  width: 170px;
   height: auto;
-  font-size: 40px;
+  font-size: 35px;
   border-radius: 20px;
   border: 2px solid black;
 }
 
-.sign-up-form-container {
+
+/* Sign-up & Login Pages */
+.sign-up-form-container, .user-details-body {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center; 
 }
-
 .sign-up-form-children, .login-form-children {
   display: flex;
   justify-content: flex-start;
   margin: 20px;
   font-size: 40px;
 }
-
 .sign-up-form-label, .login-form-label {
   width: 200px;
 }
-
 .sign-up-form-input, .login-form-input {
   border: 2px dotted black;
   font-size: 30px;
 }
-
-.sign-up-form-button, .login-form-button {
+.sign-up-form-button, .login-form-button, .user-home-page-links {
   margin: 5%;
   padding: 1% 4%;
   width: auto;
@@ -73,13 +70,89 @@ body {
   border-radius: 20px;
   border: 2px solid black;
 }
-
 .login-btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
 .login-form-button {
   width: 30%;
+}
+
+
+/* User Home Page */
+.user-home-page-links-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.user-home-page-links {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  font-family: "Roboto Condensed";
+}
+
+
+/* User Details Page */
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-bottom: 2%;
+}
+.user-details {
+  font-size: 40px;
+  margin: 3%;
+}
+.user-details-buttons-container {
+  display: flex;
+}
+.user-details-buttons-form {
+  margin: 2%;
+}
+.user-details-buttons {
+  padding: 3% 2%;
+  width: 170px;
+  height: auto;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+/* Update User Details & Delete User Details */
+.update-user-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.update-details-input {
+  font-size: 40px;
+  margin: 3%;
+}
+.update-details-submit-btn, .delete-user-btn, .back-to-details-btn {
+  margin-top: 10%;
+  padding: 1% 2%;
+  width: 170px;
+  height: auto;
+  font-size: 30px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.back-to-details-btn {
+  width: 280px;
+  padding: 2%;
+}
+
+.delete-user-btn {
+  color: whitesmoke;
+  padding: 2%;
+  width: 280px;
+  background-color: darkred;
+}
+
+.delete-user-heading {
+  text-align: center;
+  width: 60%;
 }

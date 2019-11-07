@@ -2,7 +2,10 @@
 
 <form action="/update_user" method="post">
   <input type="hidden" name="_method" value="patch">
-  <input type="text" name="name" placeholder="<%= @user["name"] %>">
-  <input type="email" name="email" placeholder="<%= @user["email"] %>">
-  <button>Submit</button>
+  <div class="update-user-details-container">
+    <input class="update-details-input" type="text" name="name" placeholder="<%= @user["name"] %>">
+    <input class="update-details-input" type="email" name="email" placeholder="<%= @user["email"] %>">
+    <button class="update-details-submit-btn">Submit</button>
+  </div>
+  
 </form>

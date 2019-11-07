@@ -39,4 +39,7 @@
 - Incremental development - Fail fast!
 - Primary Serial Key - Best option for when you need to delete from db.
 - Decide on naming conventions during planning.
+- Using redirects to send query strings.
 - Page throws error - Have you read the error correctly? No, but seriously, have you read the error correctly? No, but seriously, have you read the error correctly? No but seriously... If you're going round in circles, you havn't read the error correctly. 
+- CSS "Templating" - Useful to apply css styling to elements accross a number of pages. This helps to maintain a coherent style across all pages and prevents having to go back and forth to check styling specs. 
+- Learning to work quickly - Shortcuts are amazing for efficient work-flow.
