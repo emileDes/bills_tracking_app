@@ -1,31 +1,50 @@
 <h1>Bills Tracker</h1>
 
-<form action="/add_bill" method="post">
-  <label for="">Date:</label>
-  <input type="date" name="date">
-  <label for="">Description:</label>
-  <input type="text" name="description">
-  <label for="">Amount:</label>
-  <input type="number" name="amount">
-  <label for="">Category:</label>
-  <select name="category">
-    <option value="monthly">Monthly</option>
-    <option value="quarterly">Quarterly</option>
-  </select>
-  <label for="">Paid?</label>
-  <input type="checkbox" name="paid">
-  <button>Submit</button>
-</form>
+<div class="bills-tracker-body">
+<div class="new-bill-form-container">
+  <form class="new-bill-form"action="/add_bill" method="post">
+    <div class="new-bill-detail">
+      <label for="">Date:</label>
+      <input class="new-bill-detail-input" type="date" name="date">
+    </div>
+    <div class="new-bill-detail">
+      <label for="">Description:</label>
+      <input class="new-bill-detail-input" type="text" name="description">
+    </div>
+    <div class="new-bill-detail">
+      <label for="">Amount:</label>
+      <input class="new-bill-detail-input" type="number" name="amount">
+    </div>
+    <div class="new-bill-detail">
+    <label for="">Category:</label>
+      <select class="new-bill-detail-input" name="category">
+        <option value="monthly">Monthly</option>
+        <option value="quarterly">Quarterly</option>
+      </select>
+    </div>
+    <div class="new-bill-detail">
+      <label for="">Paid?</label>
+      <input class="new-bill-detail-input" type="checkbox" name="paid">
+    </div>
+    <div>  
+      <button class="new-bill-submit-btn">Submit</button>
+    </div>
+  </form>
+</div>
 
-<section class="bills list">
+<section class="bills-list">
   <ul>
     <% @user_bills.reverse_each do |bill| %>
-      <li><a href="/bill_details?id=<%= bill["id"] %>">
-          <%= bill["date"] %>
-          <%= bill["description"] %>
-          <%= bill["amount"] %>
-          <%= bill["category"] %>
-        </a></li>
+      <li>
+        <a href="/bill_details?id=<%= bill["id"] %>"><%= bill["date"] %></a>
+        <a href="/bill_details?id=<%= bill["id"] %>"><%= bill["description"] %></a>
+        <a href="/bill_details?id=<%= bill["id"] %>">$ <%= bill["amount"] %></a>
+        <a href="/bill_details?id=<%= bill["id"] %>"><%= bill["category"] %></a>  
+      </li>
     <% end %>
   </ul>
 </section>
+
+<footer class="bills-total-container">
+  <h3 class="bills-total">$ <%= bills_total(session[:user_id]) %></h3>
+</footer>

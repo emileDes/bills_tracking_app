@@ -17,3 +17,7 @@ end
 def delete_bill(id)
   run_sql("DELETE FROM bills WHERE id = #{id};")
 end
+
+def bills_total(user_id)
+  return run_sql("SELECT amount FROM bills WHERE user_id = #{user_id};").values.to_a.flatten.map {|str| str.to_i}.reduce {|num, n| num + n}
+end

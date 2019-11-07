@@ -1,18 +1,21 @@
-<a href="/bills_tracker">Bills Tracker</a>
 <h1>Bill Details</h1>
 
-<%= @single_bill["date"] %>
-<%= @single_bill["description"] %>
-<%= @single_bill["amount"] %>
-<%= @single_bill["category"] %>
-<%= @single_bill["paid"] %>
+<div class="bill-details-container">
+  <span class="bill-detail"><%= @single_bill["date"] %></span>
+  <span class="bill-detail"><%= @single_bill["description"] %></span>
+  <span class="bill-detail"><%= @single_bill["amount"] %></span>
+  <span class="bill-detail"><%= @single_bill["category"] %></span>
+  <span class="bill-detail"><%= @single_bill["paid"] %></span>
+</div>
 
-<form action="/update_bill">
-<input type="hidden" name="id" value="<%= @single_bill["id"] %>">
-  <button>Update</button>
-</form>
+<div class="bill-details-buttons-container">
+  <form class="bill-details-btn-form" action="/update_bill">
+  <input type="hidden" name="id" value="<%= @single_bill["id"] %>">
+    <button class="bill-detail-buttons">Update</button>
+  </form>
 
-<form action="/delete_bill?id=<%= @single_bill["id"] %>" method="post">
-  <input type="hidden" name="_method" value="delete">
-  <button>Delete</button>
-</form>
+  <form class="bill-details-btn-form" action="/delete_bill?id=<%= @single_bill["id"] %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <button class="bill-detail-buttons">Delete</button>
+  </form>
+</div>

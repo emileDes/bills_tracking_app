@@ -156,3 +156,105 @@ h1 {
   text-align: center;
   width: 60%;
 }
+
+/* Bills Tracker Page */
+.bills-tracker-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+.new-bill-form-container {
+  align-self: center;
+  width: 90%;
+  border: 2px dotted black;
+}
+.new-bill-form {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5% 2%;
+}
+.new-bill-detail {
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+}
+.new-bill-detail-input {
+  height: 20px;
+  font-size: 15px;
+}
+.new-bill-submit-btn {
+  font-size: 20px;
+  border-radius: 2px;
+}
+ul {
+  margin: 5%;
+}
+li, .bill-details-container {
+  list-style-type: none;
+  display: flex;
+  border-bottom: 1px dotted grey;
+}
+li a, .bill-detail {
+  margin: 5px;
+  width: 20%;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+li a:hover {
+  color: aqua;
+}
+.bill-details-container {
+  width: 55%;
+}
+.bill-details-buttons-container {
+  display: flex;
+}
+.bill-details-btn-form {
+  margin: 5%;
+}
+.bill-detail-buttons {
+  margin-top: 10%;
+  padding: 1% 2%;
+  width: 170px;
+  height: auto;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.update-bill-form {
+  width: 90vw;
+  display: flex;
+  border: 1px dotted grey;
+}
+
+.update-bill-input-container {
+  margin: 0;
+  margin: 2%;
+  width: 100%;
+}
+
+.update-bill-input {
+  height: 20px;
+  font-size: 15px;
+}
+
+.paid-label {
+  font-size: 20px;
+}
+
+.update-bill-btn {
+  height: 30px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.bills-total-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bills-total {
+  margin-top: none;
+}

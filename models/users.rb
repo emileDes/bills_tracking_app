@@ -1,7 +1,7 @@
 require 'bcrypt'
 
 def run_sql(sql)
-  conn = PG.connect(dbname: "billtrackingapp")
+  conn = PG.connect(ENV['DATABASE_URL'] || {dbname: 'billtrackingapp'})
   records = conn.exec(sql)
   conn.close
   return records

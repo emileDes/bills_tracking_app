@@ -1,15 +1,28 @@
 <h1>Update Bill Details</h1>
 
-<form action="/update_bill" method="post">
-  <input type="hidden" name="_method" value="patch">
-  <input type="hidden" name="id" value="<%= @single_bill["id"] %>">
-  <input type="date" name="date" placeholder="<%= @single_bill["date"] %>">
-  <input type="text" name="description" placeholder="<%= @single_bill["description"] %>">
-  <input type="text" name="amount" placeholder="<%= @single_bill["amount"] %>">
-  <select name="category" placeholder="<%= @single_bill["category"] %>">
-    <option value="monthly">Monthly</option>
-    <option value="quarterly">Quarterly</option>
-  </select>
-  <input type="checkbox" placeholder="<%= @single_bill["paid"] %>">
-  <button>Submit</button>
+<form class="update-bill-form" action="/update_bill" method="post">
+    <input class="update-bill-input" type="hidden" name="_method" value="patch">
+    <input class="update-bill-input" type="hidden" name="id" value="<%= @single_bill["id"] %>">
+  <div class="update-bill-input-container">
+    <input class="update-bill-input" type="date" name="date" placeholder="<%= @single_bill["date"] %>">
+  </div>
+  <div class="update-bill-input-container">
+    <input class="update-bill-input" type="text" name="description" placeholder="<%= @single_bill["description"] %>">
+  </div>
+  <div class="update-bill-input-container">
+    <input class="update-bill-input" type="text" name="amount" placeholder="<%= @single_bill["amount"] %>">
+  </div>
+  <div class="update-bill-input-container">
+    <select class="update-bill-input" name="category" placeholder="<%= @single_bill["category"] %>">
+      <option value="monthly">Monthly</option>
+      <option value="quarterly">Quarterly</option>
+    </select>
+  </div>
+  <div class="update-bill-input-container">
+    <label class="paid-label" for="">Paid?</label>
+    <input type="checkbox" placeholder="<%= @single_bill["paid"] %>">
+  </div>  
+  <div class="update-bill-input-container">
+    <button class="update-bill-btn">Submit</button>
+  </div>
 </form>  
