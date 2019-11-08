@@ -1,6 +1,6 @@
 # Bills Tracking App.
 
-[Bills Tracking App](https://blooming-badlands-45626.herokuapp.com/)
+[Bill Tracking App](https://blooming-badlands-45626.herokuapp.com/)
 
 - Users can create their own accounts and login/logout
 - Add bills: Amounts, date, and category by frequency (monthly/quarterly)
@@ -8,21 +8,25 @@
 
 ## Features
 - Create new user
+- Edit user details
+- Delete user
 - Add bills
-- View list of bills
-- View Bills total
+- List of bills
+- Bills total
 - Add bill categories by frequency
 - Mark as paid or unpaid 
+- Edit bill details
+- Delete bill
 
 ## Features I Want to Add.
-- Sorting options (view data in specified orders)
+- Use paid/unpaid to view list of each
+- Sorting options (view data in specified orders. Eg: by column)
 - View graph of bills over time
 - Monthly/Quarterly breakdown
 - Comparisons with previous months/years
 - Forecasting
 - Splitting bills with other users
 
-=========================================================================
 
 ## Planning:
 Rough Sketches:
@@ -33,8 +37,7 @@ Rough Sketches:
 
 ## Development:
 - Started with building the user side first, and then the bills side.
-- Step by step process. Incrementally building and testing.
-
+- Step by step process. Incremental building and testing.
 
 
 ## Problems:
@@ -46,9 +49,9 @@ Rough Sketches:
 
 ## Lessons:
 - Incremental development - Fail fast!
-- Primary Serial Key - Best option for when you need to delete from db.
-- Decide on naming conventions during planning. Naming conventions save lives further down the line. 
+- Decide on naming conventions during planning. Naming conventions save lives.
 - Using redirects to send query strings.
 - Page throws error - Have you read the error correctly? No, but seriously, have you read the error correctly? No, but seriously, have you read the error correctly? No but seriously... If you're going round in circles, you havn't read the error correctly. 
 - CSS "Templating" - Useful to apply css styling to elements accross a number of pages. This helps to maintain a coherent style across all pages and prevents having to go back and forth to check styling specs. 
+- "Basic features" turn out to often not be so basic
 ![One does not simply...](/images/3fn5mu.jpg)
