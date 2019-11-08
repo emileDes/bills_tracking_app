@@ -52,4 +52,4 @@ Rough Sketches:
 - Page throws error - Have you read the error correctly? No, but seriously, have you read the error correctly? No, but seriously, have you read the error correctly? No but seriously... If you're going round in circles, you havn't read the error correctly. 
 - CSS "Templating" - Useful to apply css styling to elements accross a number of pages. This helps to maintain a coherent style across all pages and prevents having to go back and forth to check styling specs. 
 - One does not simply, add extra features. https://imgflip.com/i/3fn38f
-![alt text](https://imgflip.com/i/3fn38f)
+![alt text](https://imgflip.com/i/3fn38f.jpg)
