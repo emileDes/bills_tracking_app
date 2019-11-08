@@ -35,5 +35,5 @@ end
 delete '/delete_user' do
   delete_user(session[:user_id])
   session[:user_id] = nil
-  redirect '/users'
+  redirect '/'
 end
